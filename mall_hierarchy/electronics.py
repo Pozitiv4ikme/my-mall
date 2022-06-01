@@ -1,7 +1,7 @@
-from accounting import Accounting
+from good import Good
 
 
-class Electronics(Accounting.Customer.Good):
+class Electronics(Good):
     function = "gaming headphones"
     name = "HyperX Cloud Stinger 2"
     producer = "HyperX"

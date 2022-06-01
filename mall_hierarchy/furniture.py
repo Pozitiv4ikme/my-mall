@@ -1,7 +1,7 @@
-from accounting import Accounting
+from good import Good
 
 
-class Furniture(Accounting.Customer.Good):
+class Furniture(Good):
     purpose = "crib"
     name = "Oasis"
     producer = "Baby Doom"

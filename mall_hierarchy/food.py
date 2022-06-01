@@ -1,7 +1,7 @@
-from accounting import Accounting
+from good import Good
 
 
-class Food(Accounting.Customer.Good):
+class Food(Good):
     expiration_date = "26.05.2023"
     name = "potato pancakes"
     producer = "Our sign"
