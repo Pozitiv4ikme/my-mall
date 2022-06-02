@@ -2,12 +2,9 @@ from good import Good
 
 
 class Food(Good):
-    expiration_date = "26.05.2023"
-    name = "potato pancakes"
-    producer = "Our sign"
-    price_in_dollar = 3.15
 
-    def __init__(self, expiration_date: str, name: str, producer: str, price_in_dollar: float) -> None:
+    def __init__(self, expiration_date: str = "26.05.2023", name: str = "potato pancakes", producer: str = "Our sign",
+                 price_in_dollar: float = 3.15) -> None:
         super().__init__(name, producer, price_in_dollar)
         self.expiration_date = expiration_date
 

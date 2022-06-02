@@ -2,13 +2,9 @@ from mall import Mall
 
 
 class Store(Mall):
-    name = "Cropp"
-    species = "street clothes"
-    opening_time = 10.00
-    closing_time = 22.30
 
-    def __init__(self, name: str, species: str, opening_time_hours: int, opening_time_minutes: int,
-                 closing_time_hours: int, closing_time_minutes: int) -> None:
+    def __init__(self, name: str = "Cropp", species: str = "street clothes", opening_time_hours: int = 10,
+                 opening_time_minutes: int = 0, closing_time_hours: int = 22, closing_time_minutes: int = 30) -> None:
         super().__init__(name, opening_time_hours, opening_time_minutes, closing_time_hours, closing_time_minutes)
         self.species = species
 

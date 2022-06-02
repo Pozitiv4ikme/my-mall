@@ -2,12 +2,9 @@ from good import Good
 
 
 class Electronics(Good):
-    function = "gaming headphones"
-    name = "HyperX Cloud Stinger 2"
-    producer = "HyperX"
-    price_in_dollar = 110.49
 
-    def __init__(self, function: str, name: str, producer: str, price_in_dollar: float) -> None:
+    def __init__(self, function: str = "gaming headphones", name: str = "HyperX Cloud Stinger 2",
+                 producer: str = "HyperX", price_in_dollar: float = 110.49) -> None:
         super().__init__(name, producer, price_in_dollar)
         self.function = function
 

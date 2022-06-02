@@ -1,9 +1,6 @@
 class Good:
-    name = "chips"
-    producer = "Lays"
-    price_in_dollar = 1.98
 
-    def __init__(self, name_of_good: str, producer_of_good: str, price_in_dollar: float) -> None:
+    def __init__(self, name_of_good: str = "chips", producer_of_good: str = "Lays", price_in_dollar: float = 1.98) -> None:
         self.name = name_of_good
         self.producer = producer_of_good
         self.price_in_dollar = price_in_dollar

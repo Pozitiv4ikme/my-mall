@@ -1,10 +1,7 @@
 class Mall:
-    name = "PortCity"
-    opening_time = 9.30
-    closing_time = 11.00
 
-    def __init__(self, name: str, opening_time_hours: int, opening_time_minutes: int, closing_time_hours: int,
-                 closing_time_minutes: int) -> None:
+    def __init__(self, name: str = "PortCity", opening_time_hours: int = 9, opening_time_minutes: int = 30,
+                 closing_time_hours: int = 11, closing_time_minutes: int = 0) -> None:
         self.name = name
         self.opening_time_hours = opening_time_hours
         self.opening_time_minutes = opening_time_minutes

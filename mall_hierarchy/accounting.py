@@ -1,7 +1,6 @@
 class Accounting:
-    time_to_do = "15.03.2004"
 
-    def __init__(self, time_to_do: str) -> None:
+    def __init__(self, time_to_do: str = "15.03.2004") -> None:
         self.time_to_do = time_to_do
 
     def accounting(self, customer, good):
